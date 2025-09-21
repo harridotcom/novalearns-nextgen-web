@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/novalearns-logo.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,8 +9,7 @@ const Navigation = () => {
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "Services", href: "#services" },
-    { name: "For Schools", href: "#schools" },
-    { name: "About", href: "#about" },
+    { name: "Competition", href: "#competition" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -18,10 +18,11 @@ const Navigation = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center">
-            <h1 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+          <div className="flex items-center space-x-3">
+            <img src={logo} alt="Novalearns" className="h-10 w-auto" />
+            <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent hidden sm:block">
               Novalearns
-            </h1>
+            </span>
           </div>
 
           {/* Desktop Navigation */}
@@ -39,11 +40,8 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" className="font-semibold">
-              Sign In
-            </Button>
             <Button className="btn-hero">
-              Request Demo
+              Register Now
             </Button>
           </div>
 
@@ -74,11 +72,8 @@ const Navigation = () => {
                 </a>
               ))}
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="outline" className="font-semibold">
-                  Sign In
-                </Button>
                 <Button className="btn-hero">
-                  Request Demo
+                  Register Now
                 </Button>
               </div>
             </div>

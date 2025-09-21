@@ -54,22 +54,22 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gradient-subtle">
+    <section id="services" className="py-16 bg-gradient-subtle">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold">
+        <div className="text-center space-y-3 mb-12">
+          <h2 className="text-3xl lg:text-4xl font-bold">
             Our{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Technical Services
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             From real-time consulting to cutting-edge workshops, we deliver comprehensive 
             technical solutions across all engineering domains.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
