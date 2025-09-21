@@ -1,48 +1,55 @@
-import { BookOpen, Users, BarChart3, Settings, Award, Lightbulb } from "lucide-react";
+import { Mic, Smartphone, Globe, Users, Cpu, Brain, Lightbulb } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: BookOpen,
-      title: "Digital Curriculum",
-      description: "Comprehensive digital learning materials aligned with national standards, interactive content, and multimedia resources.",
+      icon: Mic,
+      title: "Real-time Industry Speaker Sessions",
+      description: "Live interactive sessions with industry experts sharing cutting-edge insights and practical knowledge across various technical domains.",
       color: "text-primary",
       bgColor: "bg-primary/10",
+    },
+    {
+      icon: Smartphone,
+      title: "App Development",
+      description: "Custom mobile application development for iOS and Android platforms using latest technologies and best practices.",
+      color: "text-accent",
+      bgColor: "bg-accent/10",
+    },
+    {
+      icon: Globe,
+      title: "Web Development",
+      description: "Full-stack web application development with modern frameworks, responsive design, and scalable architecture.",
+      color: "text-secondary",
+      bgColor: "bg-secondary/10",
     },
     {
       icon: Users,
-      title: "Teacher Training",
-      description: "Professional development programs to empower educators with modern teaching methodologies and digital skills.",
-      color: "text-accent",
-      bgColor: "bg-accent/10",
-    },
-    {
-      icon: BarChart3,
-      title: "Analytics & Insights",
-      description: "Real-time data analytics to track student progress, identify learning gaps, and optimize educational outcomes.",
-      color: "text-secondary",
-      bgColor: "bg-secondary/10",
-    },
-    {
-      icon: Settings,
-      title: "School Management",
-      description: "Streamlined administrative tools for attendance, grading, scheduling, and communication between stakeholders.",
+      title: "Technical Consulting",
+      description: "Expert consulting services for technical product development, system architecture, and engineering solutions.",
       color: "text-primary",
       bgColor: "bg-primary/10",
     },
     {
-      icon: Award,
-      title: "Assessment Tools",
-      description: "Innovative evaluation methods including formative assessments, automated grading, and performance tracking.",
+      icon: Cpu,
+      title: "Robotics & IoT Workshops",
+      description: "Hands-on workshops covering robotics fundamentals, IoT implementations, and smart automation systems.",
       color: "text-accent",
       bgColor: "bg-accent/10",
     },
     {
-      icon: Lightbulb,
-      title: "Innovation Lab",
-      description: "Cutting-edge educational technologies including AI tutors, VR experiences, and adaptive learning platforms.",
+      icon: Brain,
+      title: "AI/ML Training Sessions",
+      description: "Comprehensive training programs in artificial intelligence, machine learning algorithms, and data science applications.",
       color: "text-secondary",
       bgColor: "bg-secondary/10",
+    },
+    {
+      icon: Lightbulb,
+      title: "Research & Innovation Consulting",
+      description: "Strategic guidance for research initiatives, innovation management, and technology transfer in various engineering fields.",
+      color: "text-primary",
+      bgColor: "bg-primary/10",
     },
   ];
 
@@ -51,14 +58,14 @@ const Services = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold">
-            Comprehensive{" "}
+            Our{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Educational Solutions
+              Technical Services
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From curriculum development to teacher training, we provide everything your 
-            institution needs to deliver exceptional educational experiences.
+            From real-time consulting to cutting-edge workshops, we deliver comprehensive 
+            technical solutions across all engineering domains.
           </p>
         </div>
 
@@ -68,7 +75,7 @@ const Services = () => {
             return (
               <div
                 key={service.title}
-                className="education-card group cursor-pointer"
+                className="professional-card group cursor-pointer"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className={`inline-flex p-3 rounded-xl ${service.bgColor} mb-4`}>
